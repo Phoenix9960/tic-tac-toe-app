@@ -55,7 +55,8 @@ const Game = () => {
 
     return  (
         <>
-            <h2>{ (win) ? `Ganador :  ${(!isXNext) ? 'X' : 'O'} ` : `Next Turn : ${(isXNext) ? 'X' : 'O'}` } </h2>
+            <h2>Tic Tac Toe Game</h2>
+            <h3>{ (win) ? `Ganador :  ${(!isXNext) ? 'X' : 'O'} ` : `Next Turn : ${(isXNext) ? 'X' : 'O'}` } </h3>
             <Board tiles = {board} handleClick = {handleClickBoard} />
             <button className = "btnNGame " onClick = { handleNewGame } >New Game</button>
         </>
