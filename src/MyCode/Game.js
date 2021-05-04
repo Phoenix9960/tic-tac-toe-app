@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Board from './Board';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const calculateWinner = (board) => {
     const winnigPositions = [
         [0,1,2],
@@ -58,7 +60,7 @@ const Game = () => {
             <h2>Tic Tac Toe Game</h2>
             <h3>{ (win) ? `Ganador :  ${(!isXNext) ? 'X' : 'O'} ` : `Next Turn : ${(isXNext) ? 'X' : 'O'}` } </h3>
             <Board tiles = {board} handleClick = {handleClickBoard} />
-            <button className = "btnNGame " onClick = { handleNewGame } >New Game</button>
+            <button type="button" className = "btnNGame btn btn-light" onClick = { handleNewGame } >New Game</button>
         </>
     )
 }

@@ -1,5 +1,7 @@
-import React from 'react'
-import './gato.css'
+import React from 'react';
+import './gato.css';
+
+
 
 const Square = ({ value, handleOnClick, pos }) => {
     return (
